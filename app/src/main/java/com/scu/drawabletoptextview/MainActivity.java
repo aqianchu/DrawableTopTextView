@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.scu.drawabletoptextview.view.TopRefreshTextView;
+import com.scu.drawabletoptextview.view.TopRefreshTextView1;
 
 import java.lang.reflect.Method;
 
@@ -35,5 +36,28 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        findViewById(R.id.tesxt2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TopRefreshTextView1 button = (TopRefreshTextView1) view;
+                Drawable drawable = button.getDrawableTop();
+                if (!(drawable instanceof Animatable))return;
+                try {
+                    Method m1 = drawable.getClass().getDeclaredMethod("setFramesDuration",int.class);
+                    m1.invoke(drawable,50);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                if (!((Animatable) drawable).isRunning()) {
+                    ((Animatable) drawable).start();
+                } else {
+                    ((Animatable) drawable).stop();
+                }
+            }
+        });
+
+
     }
 }

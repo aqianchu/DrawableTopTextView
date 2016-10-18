@@ -21,4 +21,17 @@
         android:background="@color/refresh_text_color"
         android:textSize="14dp"
         />
+
+    <com.scu.drawabletoptextview.view.TopRefreshTextView1
+        android:id="@+id/tesxt2"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:drawableTop="@drawable/refresh_animation_rotate_night"
+        android:text="刷新"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:background="@color/refresh_text_color"
+        android:textSize="14dp"
+        />
 </RelativeLayout>
