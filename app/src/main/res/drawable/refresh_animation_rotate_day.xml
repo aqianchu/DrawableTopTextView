@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/home_bottom_menu_news_refresh_blur"
+    android:pivotX="50%"
+    android:pivotY="50%">
+
+</animated-rotate>
