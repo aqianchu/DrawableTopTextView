@@ -11,13 +11,13 @@
 
     <com.scu.drawabletoptextview.view.TopRefreshTextView
         android:id="@+id/tesxt1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:drawableTop="@drawable/refresh_animation_rotate_night"
         android:text="刷新"
         android:gravity="center_horizontal"
         android:layout_centerInParent="true"
-        android:padding="5dp"
+        android:padding="1dp"
         android:background="@color/refresh_text_color"
         android:textSize="14dp"
         />
